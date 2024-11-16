@@ -18,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::view('/','form');
+/*************  ✨ Codeium Command ⭐  *************/
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
+/******  32f07784-679d-4cb9-8d35-f77c0d6768ab  *******/
